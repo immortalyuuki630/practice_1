@@ -1,0 +1,203 @@
+body{
+    overflow-x: hidden;
+}
+body, p, span, li, a, div{
+    font-size: 14.4px; /* 見出し以外のベーステキストサイズ */
+}
+/* 見出しは個別にサイズを設定 */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* -------------------------------header------------------------------------- */
+.header{
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    height: 270px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nav{
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nav-item{
+    font-size: 0.9rem;
+}
+.header__nav-item-img{
+    display: inline-block;
+    width: 20px;
+}
+
+/* ---------------------------------hero------------------------------------ */
+.hero{
+    height: 420px;
+}
+.hero__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------セクションの共通設定----------------------------- */
+.section--setting{
+    max-width: 890px;
+    margin: 130px auto;
+    padding: 0 25px;
+}
+.section__title--setting{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* ---------------------------------about------------------------------------ */
+.about__item--setting{
+    margin-bottom: 35px;
+}
+.about__address-irem{
+    padding-bottom: 5px;
+}
+.about__address-irem:last-child{
+    padding-bottom: 0;
+}
+.about__profile-text{
+    line-height: 1.5;
+}
+
+/* ---------------------------------works------------------------------------- */
+.works__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.works__content-item{
+    /* width: calc(100% / 3);
+    padding: 15px; */
+    flex-basis: calc(100%/3 - 20px);
+    box-sizing: border-box;
+}
+.works__content-item:nth-child(1){
+    padding-top: 0;
+    padding-left: 0;
+}
+.works__content-item:nth-child(2){
+    padding-top: 0;
+}
+.works__content-item:nth-child(3){
+    padding-top: 0;
+    padding-right: 0;
+}
+.works__content-item:nth-child(4){
+    padding-bottom: 0;
+    padding-left: 0;
+}
+.works__content-item:nth-child(5){
+    padding-bottom: 0;
+}
+.works__content-item:nth-child(6){
+    padding-bottom: 0;
+    padding-right: 0;
+}
+.works__content-img{
+    display: inline-block;
+    width: 100%;
+}
+/* -----------------------------------news---------------------------------- */
+.news__article-content{
+    display: flex;
+    border-top: 1px solid #c8c8c8;
+    padding: 18px 0;
+}
+.news__article-content:last-child{
+    border-bottom: 1px solid #c8c8c8;
+}
+.news__article-date{
+    margin-left: 15px;
+    flex-basis:20%;
+}
+
+/* ----------------------------------contact-------------------------------- */
+.contact__form-item{
+    display: flex;
+    margin-bottom: 10px;
+}
+.contact__form-label{
+    flex-basis:15%;
+}
+.contact__form-input{
+    flex-basis:85%;
+}
+.contact__form-input{
+    border: 1px solid #c8c8c8;
+    padding: 13px;
+}
+.contact__form-message-text{
+    height: 160px;
+}
+.contact__form-button{
+    display: block;
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    margin: 35px auto;
+    padding: 18px 0;
+    text-align: center;
+}
+
+/* ----------------------------------footer-------------------------------- */
+.footer{
+    background-color: #24292e;
+    text-align: center;
+}
+.footer__text{
+    color: #fff;
+    padding: 11px;
+    font-size: 8px;
+}
+
+@media screen and (max-width:600px){
+    .header{
+        display: block;
+        height: 100px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header__nav{
+        width: 100%;
+        justify-content: center;
+    }
+    .header__nav-item{
+        padding: 10px;
+    }
+
+    .works__content{
+        display: block;
+    }
+    .works__content-item{
+        margin-bottom: 30px;
+    }
+
+    .news__article-content{
+        display: block;
+        line-height: 1.6;
+        padding: 14px 0;
+    }
+    .news__article-title{
+        margin-left: 15px;
+    }
+
+    .contact__form-item{
+        display: block; 
+    }
+    .contact__form-input{
+        display: block;
+        width: 100%;
+    }
+}

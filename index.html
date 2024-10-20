@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- reset.css destyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title"><a href="#"><img src="img/logo.svg" alt=""></a></h1>
+        <nav>
+            <ul class="header__nav">
+                <li class="header__nav-item">About</li>
+                <li class="header__nav-item">Works</li>
+                <li class="header__nav-item">News</li>
+                <li class="header__nav-item">Contact</li>
+                <li class="header__nav-item"><img class="header__nav-item-img" src="img/icon-instagram.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture class="hero__img">
+                <source srcset="img/mainvisual-pc.jpg" media="(min-width: 601px)" width="1920px" height="420px"/>
+                <source srcset="img/mainvisual-sp.jpg" media="(max-width: 600px)" />
+                <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+            </picture>
+        </div>
+
+
+        <div class="about section--setting">
+            <div class="about__title section__title--setting">
+                <h2 class="about__title-text">About</h2>
+            </div>
+            <div class="about__name about__item--setting">
+                <p class="about__name-text">Xxxxx Ashley</p>
+            </div>
+            <div class="about__address about__item--setting">
+                <ul>
+                    <li class="about__address-irem">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                    <li class="about__address-irem">tel: 000-0000-0000</li>
+                    <li class="about__address-irem">url: www.xxxxxx.jp</li>
+                    <li class="about__address-irem">mail: xxx@xxxxxx.jp</li>
+                </ul>
+            </div>
+            <div class="about__profile">
+                <p class="about__profile-text">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+        </div>
+
+
+        <div class="works section--setting">
+            <div class="works__title section__title--setting">
+                <h2 class="works__title-text">Works</h2>
+            </div>
+            <ul class="works__content">
+                <li class="works__content-item"><img class="works__content-img" src="img/works1.jpg" alt=""></li>
+                <li class="works__content-item"><img class="works__content-img" src="img/works2.jpg" alt=""></li>
+                <li class="works__content-item"><img class="works__content-img" src="img/works3.jpg" alt=""></li>
+                <li class="works__content-item"><img class="works__content-img" src="img/works4.jpg" alt=""></li>
+                <li class="works__content-item"><img class="works__content-img" src="img/works5.jpg" alt=""></li>
+                <li class="works__content-item"><img class="works__content-img" src="img/works6.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+        <div class="news section--setting">
+            <div class="news__title section__title--setting">
+                <h2 class="news__title-text">News</h2>
+            </div>
+            <article class="news__article">
+                <div class="news__article-content">
+                    <date class="news__article-date">2020.XX.XX</date>
+                    <h3 class="news__article-title">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</h3>
+                </div>
+                <div class="news__article-content">
+                    <date class="news__article-date">2020.XX.XX</date>
+                    <h3 class="news__article-title">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</h3>
+                </div>
+                <div class="news__article-content">
+                    <date class="news__article-date">2020.XX.XX</date>
+                    <h3 class="news__article-title">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</h3>
+                </div>
+                <div class="news__article-content">
+                    <date class="news__article-date">2020.XX.XX</date>
+                    <h3 class="news__article-title">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</h3>
+                </div>
+                <div class="news__article-content">
+                    <date class="news__article-date">2020.XX.XX</date>
+                    <h3 class="news__article-title">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</h3>
+                </div>
+            </article>
+        </div>
+
+
+        <div class="contact section--setting">
+            <div class="contact__title section__title--setting">
+                <h2 class="contact__title-text section__title--setting">Contact</h2>
+            </div>
+            <form action="" class="contact__form">
+                <div class="contact__form-name contact__form-item">
+                    <label for="name" class="contact__form-label">NAME</label>
+                    <input type="text" name="name" class="contact__form-input" required>
+                </div>
+                <div class="contact__form-address contact__form-item">
+                    <label for="email" class="contact__form-label">E-mail</label>
+                    <input type="email" name="email" class="contact__form-input" required>
+                </div>
+                <div class="contact__form-message contact__form-item">
+                    <label for="message" class="contact__form-label">MESSAGE</label>
+                    <textarea name="message" class="contact__form-input contact__form-message-text" required></textarea>
+                </div>
+              
+                <button type="submit" class="contact__form-button">送信</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2020 My Work</p>
+    </footer>
+</body>
+</html>
